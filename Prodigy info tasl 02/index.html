@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font awespme link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- container -->
+    <div class="container">
+        <h1> StopWatch   <i class="fa-sharp fa-solid fa-stopwatch-20"></i></h1>
+        <!-- content -->
+        <div class="card">
+            <div class="time">
+                <span id="hr" class="digit">00</span>
+                <span class="text"> <sub>Hr</sub></span>
+                <span id="min" class="digit">00</span>
+                <span class="text"> <sub>Min</sub></span>
+                <span id="sec" class="digit">00</span>
+                <span class="text"> <sub>Sec</sub></span>
+                <span id="count" class="digit">00</span>
+
+            </div>
+            <!-- buttons -->
+            <div class="buttons">
+                <button onclick="start()" id="start">Start <i class="fa-solid fa-circle-play"></i></button>
+                <button onclick="stop()" id="stop">Stop <i class="fa-solid fa-circle-pause"></i></button>
+                <button onclick="restart()" id="restart">Reset <i
+                        class="fa-sharp fa-solid fa-rotate-right"></i></button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- js link -->
+    <script src="app.js"></script>
+</body>
+
+</html>
